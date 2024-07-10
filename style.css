@@ -30,7 +30,7 @@ section {
 }
 
 .padding {
-  padding: 5rem 1rem;
+  padding: 5rem 0;
 }
 
 .background {
@@ -104,61 +104,62 @@ h2 {
 /* About Section Styles */
 .about-content {
   background-color: white;
-  width: 80%;
-  padding: 2rem;
+  width: 50%;
+  padding: 4rem;
   margin: 3rem auto;
   text-align: center;
 }
 
 p.large {
-  font-family: "Montserrat", sans-serif;
-  color: rgb(40, 40, 40);
-  font: weight 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  margin-bottom: 0;
-  font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(40, 40, 40);
+    font: weight 0;
+    line-height: 1.5;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-weight: 300;
 }
 
 .skills-list {
   text-align: left;
   columns: 2;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin: 2rem 3rem;
   gap: 3rem;
 }
 
 .detail {
-  padding: 1rem 3rem 0;
-  font-family: "Montserrat", sans-serif;
-  color: rgb(39, 39, 39);
-  font: weight 0;
-  line-height: 1.5;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  margin-bottom: 0;
-  font-weight: 300;
+    padding: 1rem 3rem 0;
+    font-family: "Montserrat", sans-serif;
+      color: rgb(39, 39, 39);
+      font: weight 0;
+      line-height: 1.5;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 0;
+      font-weight: 300;
 }
 
 /* Portfolio Section Styles */
-.padding h2 {
-  text-align: center;
+
+.padding h2{
+    text-align:center;
 }
 
 .portfolio-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-top: 3rem;
 }
 
 .image-container {
-  max-width: 100%;
+  max-width: 40%;
   align-self: center;
 }
 
 .image-container img {
-  height: auto;
+  height: 90%;
   width: 100%;
   object-fit: cover;
   animation: 1s ease-out 0s 1 slideInLeft;
@@ -167,7 +168,7 @@ p.large {
 .project-container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 330px 300px;
   margin: 20px auto;
 }
 
@@ -188,14 +189,14 @@ h3 {
 }
 
 p.small {
-  font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  color: rgb(36, 36, 36);
-  font: weight 0;
-  line-height: 1.5;
-  line-height: 1.5;
-  margin-bottom: 0;
-  font-weight: 300;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(36, 36, 36);
+    font: weight 0;
+    line-height: 1.5;
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-weight: 300;
 }
 
 /* Footer Section Styles */
@@ -247,40 +248,5 @@ a:hover {
   }
   100% {
     transform: translateX(0);
-  }
-}
-
-#footerlast {
-  color: azure;
-}
-
-/* Media Queries */
-@media (min-width: 768px) {
-  .about-content {
-    width: 50%;
-  }
-
-  .portfolio-container {
-    flex-direction: row;
-  }
-
-  .project-container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 1024px) {
-  .home-content {
-    top: 10rem;
-    left: 5rem;
-    width: auto;
-  }
-
-  h1 {
-    font-size: 10rem;
-  }
-
-  h2 {
-    font-size: 3rem;
   }
 }
